@@ -15,9 +15,9 @@ def prime_check(n):
     return True
 
 
-cnt, prime = 1, 3
-while cnt < 10001:
+cnt, prime = 1, 1
+while cnt < 153:
+    prime += 2
     if prime_check(prime):
         cnt += 1
-    prime += 2
-print(prime - 2)
+print(prime)
