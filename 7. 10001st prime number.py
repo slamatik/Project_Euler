@@ -7,18 +7,17 @@ def prime_check(n):
     if n % 2 == 0 or n <= 1:
         return False
 
-    limit = int(sqrt(n)+1)
+    limit = int(sqrt(n) + 1)
 
     for div in range(3, limit, 2):
         if n % div == 0:
             return False
     return True
 
-res = []
-cnt = 0
-for i in range(1, 1000000):
-    if prime_check(i):
-        res.append(i)
-        cnt += 1
 
-print(res[10000])
+cnt, prime = 1, 3
+while cnt < 10001:
+    if prime_check(prime):
+        cnt += 1
+    prime += 2
+print(prime - 2)
