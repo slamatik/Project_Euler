@@ -16,7 +16,7 @@ def prime_check(n):
 
 
 cnt, prime = 1, 1
-while cnt < 153:
+while cnt < 10001:
     prime += 2
     if prime_check(prime):
         cnt += 1

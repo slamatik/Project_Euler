@@ -1,5 +1,5 @@
 from math import sqrt
-
+from time import time
 
 def prime_check(n):
     if n == 2:
@@ -15,7 +15,7 @@ def prime_check(n):
     return True
 
 
-total = 0
+total = 2
 
 cnt, prime = 1, 1
 while cnt < 200000:
@@ -25,4 +25,5 @@ while cnt < 200000:
         total += prime
     if prime > 2_000_000:
         break
-print(total + 2)
+
+print(total)
