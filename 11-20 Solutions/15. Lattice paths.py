@@ -6,4 +6,4 @@ def count_paths(x, y):
     return table[y - 1]
 
 
-print(count_paths(3, 3))
+print(count_paths(21, 21))
