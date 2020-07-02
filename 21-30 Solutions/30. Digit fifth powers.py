@@ -8,4 +8,3 @@ for number in range(1, 1000000):
         results.append(number)
 
 print(sum(results))
-    
